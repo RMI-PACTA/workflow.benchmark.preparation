@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# because RStudio adds one even though this repo isn't an R package
+.Rbuildignore
+
+# to not accidentally merge a local config
+.env
+
+# macOS file
+.DS_Store
+
+# inputs/ and outputs/ dirs
+inputs/
+outputs/

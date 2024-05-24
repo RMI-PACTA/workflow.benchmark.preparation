@@ -1,0 +1,76 @@
+default:
+  project_code: "" # a single string specifying the desired project code, e.g."PA2024CH"
+  pacta_financial_timestamp: "" # a single string specifying the desired timestamp in the form "YYYYQN", e.g. "2023Q4"
+  msci_filename: "" # a single string specifying the filename of the MSCI XLSX input data
+  ishares_date: "" # a single string specifying the desired date of iShares data in the form "YYYYMMDD", e.g."20231229"
+  bonds_indices_urls: "" # a R expression specifying a named vector including the desired names and URLS of the iShares Bond indices to include
+  equity_indices_urls: "" # a R expression specifying a named vector including the desired names and URLS of the iShares Equity indices to include
+
+
+2021Q4:
+  project_code: ""
+  pacta_financial_timestamp: "2021Q4"
+  msci_filename: ""
+  ishares_date: "20211231"
+  bonds_indices_urls: !expr |-
+    c(
+      "iShares Global Corp Bond UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251813/ishares-global-corporate-bond-ucits-etf/"
+    )
+  equity_indices_urls: !expr |-
+    c(
+      "iShares Core S&P 500 UCITS ETF USD (Dist) <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251900/ishares-sp-500-ucits-etf-inc-fund/",
+      "iShares MSCI World UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251881/ishares-msci-world-ucits-etf-inc-fund/",
+      "iShares MSCI EM UCITS ETF USD (Acc)" =
+      "https://www.ishares.com/uk/individual/en/products/251858/ishares-msci-emerging-markets-ucits-etf-acc-fund/",
+      "iShares MSCI ACWI UCITS ETF <USD (Accumulating)>" =
+      "https://www.ishares.com/uk/individual/en/products/251850/ishares-msci-acwi-ucits-etf/"
+    )
+
+
+2022Q4:
+  project_code: ""
+  pacta_financial_timestamp: "2022Q4"
+  msci_filename: ""
+  ishares_date: "20221230"
+  bonds_indices_urls: !expr |-
+    c(
+      "iShares Global Corp Bond UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251813/ishares-global-corporate-bond-ucits-etf/"
+    )
+  equity_indices_urls: !expr |-
+    c(
+      "iShares Core S&P 500 UCITS ETF USD (Dist) <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251900/ishares-sp-500-ucits-etf-inc-fund/",
+      "iShares MSCI World UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251881/ishares-msci-world-ucits-etf-inc-fund/",
+      "iShares MSCI EM UCITS ETF USD (Acc)" =
+      "https://www.ishares.com/uk/individual/en/products/251858/ishares-msci-emerging-markets-ucits-etf-acc-fund/",
+      "iShares MSCI ACWI UCITS ETF <USD (Accumulating)>" =
+      "https://www.ishares.com/uk/individual/en/products/251850/ishares-msci-acwi-ucits-etf/"
+    )
+
+
+2023Q4:
+  project_code: ""
+  pacta_financial_timestamp: "2023Q4"
+  msci_filename: "Constituents -29th Dec 2023-3.xlsx"
+  ishares_date: "20231229"
+  bonds_indices_urls: !expr |-
+    c(
+      "iShares Global Corp Bond UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251813/ishares-global-corporate-bond-ucits-etf/"
+    )
+  equity_indices_urls: !expr |-
+    c(
+      "iShares Core S&P 500 UCITS ETF USD (Dist) <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251900/ishares-sp-500-ucits-etf-inc-fund/",
+      "iShares MSCI World UCITS ETF <USD (Distributing)>" =
+      "https://www.ishares.com/uk/individual/en/products/251881/ishares-msci-world-ucits-etf-inc-fund/",
+      "iShares MSCI EM UCITS ETF USD (Acc)" =
+      "https://www.ishares.com/uk/individual/en/products/251858/ishares-msci-emerging-markets-ucits-etf-acc-fund/",
+      "iShares MSCI ACWI UCITS ETF <USD (Accumulating)>" =
+      "https://www.ishares.com/uk/individual/en/products/251850/ishares-msci-acwi-ucits-etf/"
+    )

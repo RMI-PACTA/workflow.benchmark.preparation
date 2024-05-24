@@ -1,0 +1,29 @@
+Package: workflow.benchmark.preparation
+Title: Run the Benchmark Preparation Workflow
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+      person(
+        given = "CJ",
+        family = "Yetman",
+        role = c("aut", "cre", "ctr"),
+        email = "cj@cjyetman.com",
+        comment = c(ORCID = "0000-0001-5099-9500")
+      ),
+      person(
+        given = "RMI",
+        role = c("cph", "fnd"),
+        email = "PACTA4investors@rmi.org"
+      )
+    )
+Description: A workflow to prepare benchmark indices for the PACTA tool.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: 
+    config,
+    dplyr,
+    logger,
+    pacta.data.scraping,
+    readxl
+Remotes:
+    RMI-PACTA/pacta.data.scraping

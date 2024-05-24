@@ -1,0 +1,18 @@
+services:
+  scenario_prep:
+    platform: linux/amd64
+    build:
+      context: .
+    environment:
+      R_CONFIG_ACTIVE: ${R_CONFIG_ACTIVE:-2023Q4}
+      BENCHMARKS_PREPARATION_INPUTS_PATH: /mnt/inputs
+      BENCHMARKS_PREPARATION_OUTPUTS_PATH: /mnt/outputs
+    volumes:
+      - type: bind
+        source: ${BENCHMARKS_PREPARATION_INPUTS_PATH:-./inputs}
+        # target must be kept in sync with config.yml
+        target: /mnt/inputs
+      - type: bind
+        source: ${BENCHMARKS_PREPARATION_OUTPUTS_PATH:-./outputs}
+        # target must be kept in sync with config.yml
+        target: /mnt/outputs

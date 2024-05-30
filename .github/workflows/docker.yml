@@ -28,7 +28,7 @@ jobs:
       do-lint: false
       do-check-r-sysdeps: false
   run-benchmark-prep:
-    uses: ./.github/workflows/run-scenario-preparation.yml
+    uses: ./.github/workflows/run-benchmark-preparation.yml
     needs: [docker]
     secrets: inherit
     with:

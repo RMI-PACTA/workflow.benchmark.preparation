@@ -27,3 +27,9 @@ jobs:
         ]
       do-lint: false
       do-check-r-sysdeps: false
+  run-benchmark-prep:
+    uses: ./.github/workflows/run-scenario-preparation.yml
+    needs: [docker]
+    secrets: inherit
+    with:
+      image-tag: ${{ needs.docker.outputs.full-image-name }}

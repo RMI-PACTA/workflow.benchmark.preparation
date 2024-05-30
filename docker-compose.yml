@@ -1,5 +1,5 @@
 services:
-  scenario_prep:
+  benchmark_prep:
     platform: linux/amd64
     build:
       context: .

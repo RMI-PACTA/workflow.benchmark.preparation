@@ -142,7 +142,7 @@
           {
             "name": "benchmark-prep-runner",
             "properties": {
-              "image": "[concat(variables('containerregistry'),'/workflow.scenario.preparation:', parameters('imageTag'))]",
+              "image": "[concat(variables('containerregistry'),'/workflow.benchmark.preparation:', parameters('imageTag'))]",
               "ports": [],
               "resources": {
                 "limits": {

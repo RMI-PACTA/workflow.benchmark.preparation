@@ -56,7 +56,7 @@ default:
 2023Q4:
   project_code: ""
   pacta_financial_timestamp: "2023Q4"
-  msci_filename: "Constituents -29th Dec 2023-3.xlsx"
+  msci_filename: "Constituents -29th Dec 2023.xlsx"
   ishares_date: "20231229"
   bonds_indices_urls: !expr |-
     c(

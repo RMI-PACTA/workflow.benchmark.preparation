@@ -1,5 +1,9 @@
 # workflow.benchmark.preparation
 
+[![Project Status: Unsupported](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
+
+**This project is archived for future reference, but no new work is expected in this repository.**
+
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![docker](https://github.com/RMI-PACTA/workflow.benchmark.preparation/actions/workflows/docker.yml/badge.svg)](https://github.com/RMI-PACTA/workflow.benchmark.preparation/actions/workflows/docker.yml)
